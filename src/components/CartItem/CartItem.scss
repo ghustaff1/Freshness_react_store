@@ -1,0 +1,86 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  //justify-content: space-between;
+  gap: 90px;
+
+  &__img {
+    width: 150px;
+    height: 100px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #151515;
+    font-size: 22px;
+    line-height: 1.3;
+
+    text-align: center;
+    flex: 0 1 30%;
+    p {
+      text-align: start;
+    }
+  }
+  &__farm {
+    font-size: 16px;
+    color: #a9a9a9;
+  }
+  &__amount {
+    display: flex;
+    align-items: center;
+    padding: 6px 7px;
+    background-color: #f9f9f9;
+    border: 2px solid #d1d1d1;
+    border-radius: 12px;
+    input {
+      border: none;
+      background: transparent;
+      border-right: 1px solid #d1d1d1;
+      width: 40px;
+      font-size: 16px;
+      line-height: 1.3;
+      margin-right: 12px;
+    }
+    p {
+      font-family: "Poppins", sans-serif;
+      font-size: 17px;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+  }
+  &__actualPrice {
+    color: #6a983c;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  &__datedPrice {
+    display: block;
+    font-size: 13px;
+    color: #a9a9a9;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  &__remove {
+    width: 20px;
+
+    margin-left: auto;
+    cursor: pointer;
+    svg {
+      path {
+        fill: #ff988a;
+      }
+    }
+  }
+}

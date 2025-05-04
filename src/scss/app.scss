@@ -1,0 +1,24 @@
+@import "./fonts";
+@import "./libs/normalize";
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+div,
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+span,
+time {
+  color: #151515;
+  font-family: "Inter", sans-serif !important;
+}

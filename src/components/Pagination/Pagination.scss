@@ -1,0 +1,26 @@
+.pages {
+  margin-top: 32px; //унификация
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  li {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #46760a;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #151515;
+    &.active {
+      background-color: #6a983c;
+      color: #ffffff;
+    }
+  }
+}

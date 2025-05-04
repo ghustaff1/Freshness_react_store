@@ -1,0 +1,97 @@
+.header {
+  font-size: 14px;
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 2px solid #f3f3f3;
+    &-item {
+      display: flex;
+      align-items:center;
+      gap: 33px;
+      .green {
+        color: #6a983c;
+      }
+    }
+  }
+  
+  .lang{
+  display: flex;
+  gap: 10px;
+    &__item{
+      cursor:pointer;
+      font-size: 14px;
+      padding: 2px 4px;
+      border: 1px solid #999999;
+      border-radius:5px;
+      &.active{
+      cursor:default;
+      background:#6a983c;
+      color:#ffffff;
+      border: 1px solid #6a983c;
+      }
+    }
+  }
+  .paprika-regular {
+    font-family: "Paprika", system-ui;
+    font-style: normal;
+  }
+  
+  &__logo{
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 48px 0;
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 42px;
+      /* button {
+        position: relative;
+        border: none;
+        background: transparent;
+      } */
+      &-authedIcon{
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 15px;
+        height: 15px;
+        border-radius:50%;
+        background:#7bb639;
+      }
+      &-cart {
+        position: relative;
+        &__amount {
+          position: absolute;
+          top: -7px;
+          right: -13px;
+          background-color: #e5704b;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          font-family: "Poppins", sans-serif;
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+    }
+  }
+  button {
+    cursor: pointer;
+  }
+}
+.localStorage-TEMP-DELETE{
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor:pointer;
+}

@@ -1,0 +1,136 @@
+.category {
+  .top {
+    &__head {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__view {
+      display: flex;
+      gap: 24px;
+      svg path {
+        stroke: #a9a9a9;
+      }
+      * {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        p {
+          color: #5e5e5e;
+        }
+      }
+      .active {
+        p {
+          color: black;
+        }
+        svg path {
+          stroke: #6a983c;
+        }
+      }
+    }
+    &__productsAmount {
+      span {
+        background-color: #f4f8ec;
+        color: #6a983c;
+        border-radius: 12px;
+        padding: 1px 5px;
+      }
+    }
+  }
+
+  .filters {
+    margin-top: 24px;
+    &__price {
+      padding: 9px 16px;
+      background-color: #f9f9f9;
+      border: 1px solid #d1d1d1;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+      }
+    }
+    &__title {
+      font-weight: 700;
+      font-family: "Poppins", sans-serif;
+    }
+    &__checkbox {
+      width: 24px;
+      height: 24px;
+      border: 1px solid #d1d1d1;
+      border-radius: 50%;
+    }
+    .filters-priceBtn.active {
+      span {
+        background-color: #6a983c;
+        border: 1px solid #46760a;
+      }
+    }
+  }
+
+  .aside {
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    h2 {
+      margin-bottom: 16px;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+    &__checkbox {
+      width: 22px;
+      height: 22px;
+      border: 1px solid #d1d1d1;
+      border-radius: 3px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+      }
+    }
+    li.active {
+      .aside__checkbox {
+        background-color: #6a983c;
+      }
+    }
+  }
+  .main {
+    min-height: 823px;
+    padding-top: 64px;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    &__items.grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+    }
+    &__items.list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 32px;
+    }
+  }
+}

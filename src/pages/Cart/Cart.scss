@@ -1,0 +1,63 @@
+.cart {
+  padding: 0 0 64px 0;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  &__clear {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0;
+    span {
+      display: flex;
+      gap: 8px;
+      font-size: 20px;
+      p {
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+  &__amount {
+    font-weight: 700;
+  }
+  &__totalPrice {
+    font-weight: 700;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+.empty{
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  &__svg{
+    svg{
+      width: 80px;
+    }
+  }
+  &__title{
+    font-size: 48px;
+
+  }
+}

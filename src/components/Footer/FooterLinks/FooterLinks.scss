@@ -1,0 +1,10 @@
+.refs {
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    margin-bottom: 16px;
+  }
+  li:not(:last-child){
+    margin-bottom: 16px;
+  }
+}

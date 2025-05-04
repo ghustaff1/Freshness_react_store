@@ -1,0 +1,36 @@
+.popupDisabled{
+  @apply fixed hidden top-0 left-0 z-50 w-full h-full bg-lime-900/40 flex items-center justify-center;
+
+}
+.popupEnabled{
+  @apply fixed top-0 left-0 z-50 w-full h-full bg-lime-900/40 flex items-center justify-center animate-modalBgShow;
+
+  .form{
+    @apply border-2 rounded-xl p-7 bg-slate-200 w-96 animate-modalShow;
+  }
+
+  .formTop{
+    @apply flex justify-between mb-4;
+  }
+  .formTitle{
+    @apply text-base font-bold text-center;
+  }
+  .formBody{
+    @apply mb-3 flex flex-col gap-4;
+  }
+  .formLabel{
+    @apply text-slate-700 text-sm;
+  }
+  .formInput{
+    @apply py-1.5 px-3 border-2 border-slate-500 rounded-md text-sm font-poppins transition ease-in-out duration-200 hover:border-indigo-700 hover:bg-indigo-100 focus:border-indigo-700 focus:bg-indigo-100;
+  }
+  .submitBtn{
+    @apply block rounded-lg p-2 font-poppins text-slate-200 text-base bg-green2 transition ease-in-out duration-100 hover:opacity-95 active:translate-y-0.5;
+  }
+  .textSm{
+    @apply flex align-middle justify-between
+  }
+
+
+  
+}
